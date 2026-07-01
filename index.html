@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanjid (MD Sanged Hasan) - Full-Stack Developer & Flutter Specialist Portfolio. Specialized in Flutter, Laravel, FastAPI, and responsive UI.">
+    <title>Sanjid | Full-Stack Developer & Flutter Specialist</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CDN Frameworks & Utility Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.9/dist/lenis.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #030712; color: #f3f4f6; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
+        .glass-nav { background: rgba(3, 7, 18, 0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+        .glass-card { background: rgba(17, 24, 39, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .glass-card:hover { border-color: rgba(6, 182, 212, 0.4); box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.3); transform: translateY(-4px); }
+        .gradient-text { background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 antialiased selection:bg-cyan-500 selection:text-white" x-data="{ 
+    mobileMenuOpen: false,
+    profile: {
+        name: 'Sanjid',
+        fullName: 'MD Sanged Hasan',
+        title: 'Full-Stack Developer & Flutter Specialist',
+        location: 'Habiganj, Sylhet, Bangladesh',
+        phone: '01615805076',
+        email: 'sanjid@example.com',
+        github: 'https://github.com/Sanjid121',
+        playStore: 'https://play.google.com/store/search?q=fulbaria%20sheba&c=apps&hl=fil',
+        cvUrl: '/CV_Sanjid_Hasan.pdf',
+        experienceYears: '3+',
+        badgeText: 'Available for Full-Stack & Flutter Opportunities',
+        bio: 'Dynamic Developer with 3+ years of expertise in building scalable Flutter mobile architecture, high-performance backends with Laravel and FastAPI, and translating complex Figma designs into production-ready products.'
+    },
+    typedStrings: [
+        'Flutter & Mobile Specialist',
+        'Laravel & FastAPI Backend Engineer',
+        'Full-Stack Solution Architect',
+        'Figma-to-Code Specialist'
+    ],
+    stats: [
+        { value: '3+ Years', label: 'Flutter Experience' },
+        { value: 'Live', label: 'Google Play Store' },
+        { value: 'Laravel', label: 'REST APIs & Backend' },
+        { value: 'FastAPI', label: 'Python Services' }
+    ],
+    skills: [],
+    projects: [],
+    education: {
+        degree: 'Diploma in Engineering',
+        field: 'Computer Science & Technology',
+        status: 'Ongoing (5th Sem)',
+        institution: 'Habiganj Polytechnic Institute — Habiganj, Sylhet, Bangladesh'
+    },
+    contactForm: { name: '', email: '', message: '' },
+    contactSubmitted: false,
+    async init() {
+        try {
+            const res = await fetch('/portfolio_data.json');
+            if (res.ok) {
+                const data = await res.json();
+                if (data.profile) this.profile = data.profile;
+                if (data.typedStrings) this.typedStrings = data.typedStrings;
+                if (data.stats) this.stats = data.stats;
+                if (data.skills) this.skills = data.skills;
+                if (data.projects) this.projects = data.projects;
+                if (data.education) this.education = data.education;
+            }
+        } catch (e) {}
+        this.initTyped();
+    },
+    initTyped() {
+        if (document.querySelector('#typed-text') && typeof Typed !== 'undefined') {
+            new Typed('#typed-text', {
+                strings: this.typedStrings,
+                typeSpeed: 50,
+                backSpeed: 30,
+                backDelay: 2000,
+                loop: true
+            });
+        }
+    },
+    async submitContact() {
+        try {
+            const res = await fetch('/api/v1/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(this.contactForm)
+            });
+            this.contactSubmitted = true;
+        } catch(e) {
+            this.contactSubmitted = true;
+        }
+    }
+}">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform" x-text="profile.name ? profile.name.charAt(0) : 'S'">
+                        S
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-white font-heading block" x-text="profile.name">Sanjid</span>
+                        <span class="text-xs text-cyan-400 font-medium block" x-text="profile.title">Full-Stack Developer</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                    <a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-cyan-400 transition-colors">Skills</a>
+                    <a href="#projects" class="text-gray-300 hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#experience" class="text-gray-300 hover:text-cyan-400 transition-colors">Experience</a>
+                    <a :href="profile.cvUrl" download class="px-4 py-2 rounded-xl border border-cyan-500/40 bg-cyan-500/10 text-cyan-300 font-semibold hover:bg-cyan-500/20 transition-all flex items-center gap-2">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        Download CV
+                    </a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 hover:-translate-y-0.5">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button @click="mobileMenuOpen = !mobileMenuOpen" class="text-gray-400 hover:text-white p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path x-show="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path x-show="mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div x-show="mobileMenuOpen" x-transition class="md:hidden bg-gray-900/95 backdrop-blur-xl border-b border-gray-800 px-4 pt-4 pb-6 space-y-3">
+            <a href="#about" @click="mobileMenuOpen = false" class="block text-gray-300 hover:text-cyan-400 font-medium py-2">About</a>
+            <a href="#skills" @click="mobileMenuOpen = false" class="block text-gray-300 hover:text-cyan-400 font-medium py-2">Skills</a>
+            <a href="#projects" @click="mobileMenuOpen = false" class="block text-gray-300 hover:text-cyan-400 font-medium py-2">Projects</a>
+            <a href="#experience" @click="mobileMenuOpen = false" class="block text-gray-300 hover:text-cyan-400 font-medium py-2">Experience</a>
+            <a :href="profile.cvUrl" download class="block w-full text-center py-2.5 rounded-xl border border-cyan-500/40 bg-cyan-500/10 text-cyan-300 font-semibold mb-2">📥 Download CV</a>
+            <a href="#contact" @click="mobileMenuOpen = false" class="block w-full text-center py-3 rounded-xl bg-cyan-500 text-white font-semibold">Get in Touch</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section id="about" class="relative min-h-[90vh] flex items-center justify-center pt-12 pb-20 overflow-hidden">
+            <!-- Background Glow Blobs -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <!-- Live Play Store Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-sm font-medium mb-8 gsap-badge shadow-lg shadow-cyan-500/10">
+                    <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+                    <span x-text="profile.badgeText || 'Available for Full-Stack & Flutter Opportunities'">Available for Full-Stack & Flutter Opportunities</span>
+                </div>
+
+                <!-- Main Title & Typed Text -->
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 gsap-hero-title">
+                    Hi, I'm <span class="gradient-text" x-text="profile.name">Sanjid</span> 👋<br>
+                    <span id="typed-text" class="text-2xl sm:text-4xl lg:text-5xl text-gray-300 font-bold block mt-3 min-h-[1.5em]"></span>
+                </h1>
+
+                <!-- Short Summary -->
+                <p class="max-w-3xl mx-auto text-lg sm:text-xl text-gray-400 mb-10 leading-relaxed gsap-hero-title" x-text="profile.bio">
+                    Dynamic Developer with 3+ years of expertise in building scalable Flutter mobile architecture, high-performance backends with Laravel and FastAPI, and translating complex Figma designs into production-ready products.
+                </p>
+
+                <!-- CTAs & Links -->
+                <div class="flex flex-wrap justify-center items-center gap-4 gsap-hero-title">
+                    <a href="#projects" class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white font-bold text-lg shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300">
+                        Explore My Work
+                    </a>
+                    <a :href="profile.cvUrl" download class="px-7 py-4 rounded-xl bg-cyan-500/20 border border-cyan-500/50 text-cyan-300 font-bold text-lg hover:bg-cyan-500/30 transition-all duration-300 flex items-center gap-2 shadow-lg shadow-cyan-500/10">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        Download CV
+                    </a>
+                    <a :href="profile.github" target="_blank" class="px-7 py-4 rounded-xl glass-card text-white font-semibold text-lg hover:bg-gray-800/80 hover:border-gray-600 transition-all duration-300 flex items-center gap-2">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                    <a :href="profile.playStore" target="_blank" class="px-6 py-4 rounded-xl glass-card text-emerald-400 font-semibold text-lg border-emerald-500/30 hover:bg-emerald-950/40 transition-all duration-300 flex items-center gap-2">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.37 2.37 0 0 1-.61-1.614V3.428c0-.623.226-1.196.609-1.614zm11.604 11.604l2.457 2.457-11.83 6.786 9.373-9.243zm0-2.836L5.84 1.339l11.83 6.786-2.457 2.457zm1.884 1.418l3.493 2.002c.866.497.866 1.309 0 1.806l-3.493 2.002-2.316-2.316 2.316-2.316z"/></svg>
+                        Fulbaria Sheba App
+                    </a>
+                </div>
+
+                <!-- Dynamic Highlight Stats Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto" data-aos="fade-up">
+                    <template x-for="(stat, idx) in stats" :key="idx">
+                        <div class="glass-card p-6 rounded-2xl text-center">
+                            <div class="text-3xl sm:text-4xl font-extrabold mb-1" :class="idx === 0 ? 'text-cyan-400' : (idx === 1 ? 'text-purple-400' : (idx === 2 ? 'text-blue-400' : 'text-teal-400'))" x-text="stat.value"></div>
+                            <div class="text-xs text-gray-400 uppercase tracking-wider" x-text="stat.label"></div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Skills Section -->
+        <section id="skills" class="py-20 relative bg-gray-900/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                        Core Technical <span class="gradient-text">Skills</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                        Comprehensive expertise in mobile development, backend microservices, database architectures, and cloud deployment.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <template x-for="(skill, idx) in skills" :key="idx">
+                        <div class="glass-card rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300" data-aos="fade-up" :data-aos-delay="(idx + 1) * 100">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6" x-text="skill.icon"></div>
+                            <h3 class="text-xl font-bold text-white mb-4 font-heading" x-text="skill.category"></h3>
+                            <div class="flex flex-wrap gap-2">
+                                <template x-for="(item, iIdx) in skill.items" :key="iIdx">
+                                    <span class="badge badge-lg p-3" :class="iIdx === 0 ? 'bg-cyan-950 text-cyan-300 border-cyan-700/50' : 'bg-slate-800 text-gray-300 border-gray-700'" x-text="item"></span>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Projects Section -->
+        <section id="projects" class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                        Key <span class="gradient-text">Projects</span> & Portfolio
+                    </h2>
+                    <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                        Real-world applications delivered with high performance, seamless user experience, and robust backend architecture.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <template x-for="(project, idx) in projects" :key="idx">
+                        <div class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-500" data-aos="fade-up" :data-aos-delay="(idx + 1) * 100">
+                            <div class="p-8">
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30" x-text="project.badge"></span>
+                                    <span class="text-xs text-gray-500" x-text="project.category"></span>
+                                </div>
+                                <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors font-heading" x-text="project.title"></h3>
+                                <p class="text-gray-400 text-sm leading-relaxed mb-6" x-text="project.description"></p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <template x-for="(tItem, tIdx) in project.tech" :key="tIdx">
+                                        <span class="text-xs px-2.5 py-1 rounded-md bg-gray-800 text-cyan-300 font-medium" x-text="tItem"></span>
+                                    </template>
+                                </div>
+                            </div>
+                            <div class="p-8 pt-0">
+                                <a :href="project.playStoreLink || project.githubLink || profile.github" target="_blank" class="w-full py-3 px-4 rounded-xl font-semibold text-center block transition-all" :class="project.playStoreLink ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-white hover:opacity-90' : 'bg-gray-800 hover:bg-gray-700 text-white'" x-text="project.buttonText"></a>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Experience & Education Section -->
+        <section id="experience" class="py-20 relative bg-gray-900/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Education -->
+                    <div data-aos="fade-right">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xl">🎓</div>
+                            <h2 class="text-3xl font-bold text-white font-heading">Education</h2>
+                        </div>
+                        <div class="glass-card rounded-2xl p-8 border-l-4 border-l-cyan-500">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-white font-heading" x-text="education.degree">Diploma in Engineering</h3>
+                                <span class="badge badge-accent bg-cyan-500/20 text-cyan-300 border-0" x-text="education.status">Ongoing (5th Sem)</span>
+                            </div>
+                            <p class="text-cyan-400 font-medium text-sm mb-4" x-text="education.field">Computer Science & Technology</p>
+                            <p class="text-gray-400 text-sm" x-text="education.institution">Habiganj Polytechnic Institute — Habiganj, Sylhet, Bangladesh</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact / Location Summary -->
+                    <div data-aos="fade-left">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-xl">📍</div>
+                            <h2 class="text-3xl font-bold text-white font-heading">Contact Details</h2>
+                        </div>
+                        <div class="glass-card rounded-2xl p-8 space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-gray-800 flex items-center justify-center text-cyan-400 text-xl">📞</div>
+                                <div>
+                                    <div class="text-xs text-gray-400 uppercase font-medium">Phone</div>
+                                    <div class="text-lg font-semibold text-white" x-text="profile.phone">01615805076</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-gray-800 flex items-center justify-center text-purple-400 text-xl">🏡</div>
+                                <div>
+                                    <div class="text-xs text-gray-400 uppercase font-medium">Location</div>
+                                    <div class="text-lg font-semibold text-white" x-text="profile.location">Habiganj, Sylhet, Bangladesh</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Contact Form Section -->
+        <section id="contact" class="py-24 relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden" data-aos="zoom-in">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-3 font-heading">Let's Work Together 🚀</h2>
+                        <p class="text-gray-400 text-sm sm:text-base">
+                            Have a project in mind or want to collaborate on Flutter mobile apps or Laravel backend systems? Send a message below.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div x-show="contactSubmitted" class="p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-center text-sm font-medium">
+                            Thank you for reaching out! Sanjid will get back to you soon. Message saved in backend database.
+                        </div>
+
+                        <form x-show="!contactSubmitted" @submit.prevent="submitContact()" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Your Name</label>
+                                    <input type="text" x-model="contactForm.name" required placeholder="MD Sanged Hasan" class="w-full px-4 py-3.5 rounded-xl bg-gray-900/80 border border-gray-800 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Your Email</label>
+                                    <input type="email" x-model="contactForm.email" required placeholder="sanjid@example.com" class="w-full px-4 py-3.5 rounded-xl bg-gray-900/80 border border-gray-800 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Message</label>
+                                <textarea rows="5" x-model="contactForm.message" required placeholder="Tell me about your project or opportunity..." class="w-full px-4 py-3.5 rounded-xl bg-gray-900/80 border border-gray-800 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white font-bold text-lg shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800/80 bg-gray-950 py-12 text-sm text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                <p>© 2026 Sanjid (MD Sanged Hasan). All rights reserved.</p>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a :href="profile.github" target="_blank" class="hover:text-cyan-400 transition-colors">GitHub</a>
+                <a :href="profile.playStore" target="_blank" class="hover:text-cyan-400 transition-colors">Play Store</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CDN JS Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Lenis Smooth Scroll
+            if (typeof Lenis !== 'undefined') {
+                const lenis = new Lenis({ duration: 1.2, smoothWheel: true });
+                function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+                requestAnimationFrame(raf);
+            }
+            // AOS Init
+            if (typeof AOS !== 'undefined') {
+                AOS.init({ duration: 800, once: true });
+            }
+            // GSAP Animations
+            if (typeof gsap !== 'undefined') {
+                gsap.from('.gsap-hero-title', { opacity: 0, y: 30, duration: 1, stagger: 0.2, ease: 'power3.out' });
+                gsap.from('.gsap-badge', { scale: 0.8, opacity: 0, duration: 0.8, delay: 0.4, ease: 'back.out(1.7)' });
+            }
+        });
+    </script>
+</body>
+</html>

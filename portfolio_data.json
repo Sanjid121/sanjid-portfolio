@@ -1,0 +1,101 @@
+{
+    "profile": {
+        "name": "Sanjid",
+        "fullName": "MD Sanged Hasan",
+        "title": "Full-Stack Developer & Flutter Specialist",
+        "location": "Habiganj, Sylhet, Bangladesh",
+        "phone": "01615805076",
+        "email": "sanjid@example.com",
+        "github": "https://github.com/Sanjid121",
+        "playStore": "https://play.google.com/store/search?q=fulbaria%20sheba&c=apps&hl=fil",
+        "cvUrl": "/CV_Sanjid_Hasan.pdf",
+        "experienceYears": "3+",
+        "badgeText": "Available for Full-Stack & Flutter Opportunities",
+        "bio": "Dynamic Developer with 3+ years of expertise in building scalable Flutter mobile architecture, high-performance backends with Laravel and FastAPI, and translating complex Figma designs into production-ready products."
+    },
+    "typedStrings": [
+        "Flutter & Mobile Specialist",
+        "Laravel & FastAPI Backend Engineer",
+        "Full-Stack Solution Architect",
+        "Figma-to-Code Specialist"
+    ],
+    "stats": [
+        { "value": "3+ Years", "label": "Flutter Experience" },
+        { "value": "Live", "label": "Google Play Store" },
+        { "value": "Laravel", "label": "REST APIs & Backend" },
+        { "value": "FastAPI", "label": "Python Services" }
+    ],
+    "skills": [
+        {
+            "category": "Mobile Development",
+            "icon": "📱",
+            "borderColor": "cyan",
+            "items": ["Flutter (3+ Years)", "Dart", "State Management", "App Publishing"]
+        },
+        {
+            "category": "Backend & APIs",
+            "icon": "⚙️",
+            "borderColor": "blue",
+            "items": ["Laravel Framework", "Python FastAPI", "RESTful APIs", "JWT Auth"]
+        },
+        {
+            "category": "UI/UX Implementation",
+            "icon": "🎨",
+            "borderColor": "purple",
+            "items": ["Figma-to-Flutter", "Figma-to-Web", "Responsive UI", "Animation Design"]
+        },
+        {
+            "category": "Database & DevOps",
+            "icon": "☁️",
+            "borderColor": "emerald",
+            "items": ["MySQL", "VPS Deployment", "cPanel Hosting", "Server Configuration"]
+        },
+        {
+            "category": "Tools & Workflow",
+            "icon": "🛠️",
+            "borderColor": "amber",
+            "items": ["Git & GitHub", "Postman API Testing", "Android Studio", "Agile Methodologies"]
+        }
+    ],
+    "projects": [
+        {
+            "id": "fulbaria-sheba",
+            "title": "Fulbaria Sheba",
+            "badge": "Live on Play Store 🟢",
+            "category": "Mobile App",
+            "description": "Architected and deployed a community-centric service application using Flutter, now live on the Google Play Store. Features local service discovery, emergency contact management, and low-latency real-time API data fetching.",
+            "tech": ["Flutter", "Android", "REST APIs"],
+            "playStoreLink": "https://play.google.com/store/search?q=fulbaria%20sheba&c=apps&hl=fil",
+            "githubLink": "https://github.com/Sanjid121",
+            "buttonText": "View on Play Store ↗"
+        },
+        {
+            "id": "ecommerce-ecosystem",
+            "title": "E-Commerce Ecosystem",
+            "badge": "Full-Stack Solution 🛒",
+            "category": "Web & Mobile",
+            "description": "Engineered a full-stack e-commerce platform integrating a Laravel-powered backend with a Flutter mobile client. Built RESTful APIs for product catalog management, JWT authentication, and checkout flows deployed on VPS with MySQL.",
+            "tech": ["Laravel", "Flutter", "MySQL", "JWT"],
+            "playStoreLink": "",
+            "githubLink": "https://github.com/Sanjid121",
+            "buttonText": "View GitHub Repository ↗"
+        },
+        {
+            "id": "figma-ui",
+            "title": "Figma to Production UI",
+            "badge": "Frontend Showcase 🎨",
+            "category": "UI/UX",
+            "description": "Translated complex, high-fidelity Figma prototypes into pixel-perfect, production-ready Flutter and web components. Implemented smooth micro-animations, adaptive layouts, and Material Design compliance.",
+            "tech": ["Figma", "Flutter", "Animations"],
+            "playStoreLink": "",
+            "githubLink": "https://github.com/Sanjid121",
+            "buttonText": "Explore UI Repository ↗"
+        }
+    ],
+    "education": {
+        "degree": "Diploma in Engineering",
+        "field": "Computer Science & Technology",
+        "status": "Ongoing (5th Sem)",
+        "institution": "Habiganj Polytechnic Institute — Habiganj, Sylhet, Bangladesh"
+    }
+}

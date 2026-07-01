@@ -1,0 +1,30 @@
+================================================================
+MD SANGED HASAN (SANJID)
+Full-Stack Developer & Flutter Specialist
+Habiganj, Sylhet, Bangladesh | Phone: 01615805076
+GitHub: https://github.com/Sanjid121
+Play Store: https://play.google.com/store/search?q=fulbaria%20sheba&c=apps&hl=fil
+================================================================
+
+PROFESSIONAL SUMMARY:
+Dynamic Full-Stack Developer with 2+ years of experience in building 
+scalable mobile apps (Flutter) and robust backends (Laravel, FastAPI). 
+Proven track record of delivering live production applications on Google 
+Play Store and architecting end-to-end RESTful services.
+
+TECHNICAL SKILLS:
+- Mobile: Flutter (2+ Years), Dart, GetX, State Management, Play Store Publishing
+- Backend: Laravel Framework, Python FastAPI, REST APIs, JWT Authentication
+- Database & Cloud: MySQL, VPS Management, cPanel, Server Configuration
+- Frontend & UI/UX: Figma-to-Code, Responsive Design, Tailwind CSS, Alpine.js
+
+FEATURED PROJECTS:
+1. Fulbaria Sheba (Google Play Store)
+   - Architected community service app with low-latency APIs.
+2. Full-Stack E-Commerce Ecosystem
+   - Laravel API backend + Flutter mobile app integration with JWT.
+
+EDUCATION:
+- Diploma in Engineering in Computer Science & Technology
+  Habiganj Polytechnic Institute (5th Semester - Ongoing)
+================================================================
