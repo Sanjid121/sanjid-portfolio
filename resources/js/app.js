@@ -1,6 +1,6 @@
 import Alpine from 'alpinejs';
 import AOS from 'aos';
-import Lenis from '@studio-freight/lenis';
+import Lenis from 'lenis';
 import gsap from 'gsap';
 import Typed from 'typed.js';
 import 'flowbite';

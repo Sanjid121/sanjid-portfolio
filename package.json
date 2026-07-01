@@ -16,7 +16,7 @@
         "vite": "^5.0.0"
     },
     "dependencies": {
-        "@studio-freight/lenis": "^1.0.42",
+        "lenis": "^1.1.5",
         "alpinejs": "^3.13.8",
         "aos": "^2.3.4",
         "daisyui": "^4.10.2",

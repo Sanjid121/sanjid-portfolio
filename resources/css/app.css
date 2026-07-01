@@ -1,8 +1,9 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
 @import 'aos/dist/aos.css';
-@import '@studio-freight/lenis/dist/lenis.css';
+@import 'lenis/dist/lenis.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   body {
