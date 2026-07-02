@@ -1,8 +1,8 @@
 {
     "profile": {
         "name": "Sanjid",
-        "fullName": "MD Sanged Hasan",
-        "title": "Full-Stack Developer & Flutter Specialist",
+        "fullName": "MD:Sanjid",
+        "title": "Full-Stack Developer | Flutter & Mobile Specialist",
         "location": "Habiganj, Sylhet, Bangladesh",
         "phone": "01615805076",
         "email": "sanjid@example.com",
@@ -11,12 +11,12 @@
         "cvUrl": "/CV_Sanjid_Hasan.pdf",
         "experienceYears": "3+",
         "badgeText": "Available for Full-Stack & Flutter Opportunities",
-        "bio": "Dynamic Developer with 3+ years of expertise in building scalable Flutter mobile architecture, high-performance backends with Laravel and FastAPI, and translating complex Figma designs into production-ready products."
+        "bio": "Dynamic Full-Stack Developer with 3+ years of expertise in Flutter and mobile application architecture. Proficient in building scalable backends using Laravel and FastAPI. Specialized in converting complex Figma designs into pixel-perfect, responsive interfaces. Proven ability to deploy and manage applications on VPS and Cloud environments, with a live product presence on the Google Play Store."
     },
     "typedStrings": [
+        "Full-Stack Developer",
         "Flutter & Mobile Specialist",
         "Laravel & FastAPI Backend Engineer",
-        "Full-Stack Solution Architect",
         "Figma-to-Code Specialist"
     ],
     "stats": [
@@ -36,10 +36,10 @@
             "category": "Backend & APIs",
             "icon": "⚙️",
             "borderColor": "blue",
-            "items": ["Laravel Framework", "Python FastAPI", "RESTful APIs", "JWT Auth"]
+            "items": ["Laravel (1.5 years)", "Python FastAPI (3 Months)", "RESTful API Development"]
         },
         {
-            "category": "UI/UX Implementation",
+            "category": "UI/UX & Frontend",
             "icon": "🎨",
             "borderColor": "purple",
             "items": ["Figma-to-Flutter", "Figma-to-Web", "Responsive UI", "Animation Design"]
@@ -48,13 +48,13 @@
             "category": "Database & DevOps",
             "icon": "☁️",
             "borderColor": "emerald",
-            "items": ["MySQL", "VPS Deployment", "cPanel Hosting", "Server Configuration"]
+            "items": ["MySQL", "VPS Management & Deployment", "cPanel", "Hosting Configuration"]
         },
         {
             "category": "Tools & Workflow",
             "icon": "🛠️",
             "borderColor": "amber",
-            "items": ["Git & GitHub", "Postman API Testing", "Android Studio", "Agile Methodologies"]
+            "items": ["Git", "GitHub", "Postman", "Android Studio", "VS Code"]
         }
     ],
     "projects": [
@@ -63,7 +63,7 @@
             "title": "Fulbaria Sheba",
             "badge": "Live on Play Store 🟢",
             "category": "Mobile App",
-            "description": "Architected and deployed a community-centric service application using Flutter, now live on the Google Play Store. Features local service discovery, emergency contact management, and low-latency real-time API data fetching.",
+            "description": "Architected and deployed a community-centric service application using Flutter, now live on the Google Play Store. Engineered features for local service discovery, emergency contact management, and real-time data fetching via REST APIs. Optimized app performance and UI rendering to deliver a seamless, low-latency user experience on Android devices.",
             "tech": ["Flutter", "Android", "REST APIs"],
             "playStoreLink": "https://play.google.com/store/search?q=fulbaria%20sheba&c=apps&hl=fil",
             "githubLink": "https://github.com/Sanjid121",
@@ -74,19 +74,19 @@
             "title": "E-Commerce Ecosystem",
             "badge": "Full-Stack Solution 🛒",
             "category": "Web & Mobile",
-            "description": "Engineered a full-stack e-commerce platform integrating a Laravel-powered backend with a Flutter mobile client. Built RESTful APIs for product catalog management, JWT authentication, and checkout flows deployed on VPS with MySQL.",
-            "tech": ["Laravel", "Flutter", "MySQL", "JWT"],
+            "description": "Engineered a full-stack e-commerce platform integrating a Laravel-powered backend with a Flutter mobile client. Architected RESTful APIs for product catalog management, user authentication (JWT), and secure checkout flows. Deployed the application to a VPS environment, configuring MySQL databases, cPanel, and server hosting.",
+            "tech": ["Laravel", "Flutter", "MySQL", "REST APIs"],
             "playStoreLink": "",
             "githubLink": "https://github.com/Sanjid121",
             "buttonText": "View GitHub Repository ↗"
         },
         {
             "id": "figma-ui",
-            "title": "Figma to Production UI",
+            "title": "UI/UX Implementation — Figma to Production",
             "badge": "Frontend Showcase 🎨",
             "category": "UI/UX",
-            "description": "Translated complex, high-fidelity Figma prototypes into pixel-perfect, production-ready Flutter and web components. Implemented smooth micro-animations, adaptive layouts, and Material Design compliance.",
-            "tech": ["Figma", "Flutter", "Animations"],
+            "description": "Translated complex, high-fidelity Figma prototypes into pixel-perfect, production-ready Flutter code. Implemented advanced animations, custom widgets, and adaptive layouts adhering to Material Design principles. Achieved design accuracy and responsiveness across multiple screen sizes and device densities.",
+            "tech": ["Figma", "Flutter", "Dart"],
             "playStoreLink": "",
             "githubLink": "https://github.com/Sanjid121",
             "buttonText": "Explore UI Repository ↗"
@@ -95,7 +95,7 @@
     "education": {
         "degree": "Diploma in Engineering",
         "field": "Computer Science & Technology",
-        "status": "Ongoing (5th Sem)",
-        "institution": "Habiganj Polytechnic Institute — Habiganj, Sylhet, Bangladesh"
+        "status": "Ongoing (5th Semester)",
+        "institution": "Habiganj Polytechnic Institute · Habiganj, Sylhet"
     }
 }

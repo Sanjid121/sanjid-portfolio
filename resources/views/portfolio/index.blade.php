@@ -24,7 +24,7 @@
 
         <!-- Short Summary -->
         <p class="max-w-3xl mx-auto text-lg sm:text-xl text-gray-400 mb-10 leading-relaxed gsap-hero-title">
-            Dynamic Developer with <strong class="text-white">2+ years of expertise</strong> in building scalable Flutter mobile architecture, high-performance backends with <strong class="text-cyan-400">Laravel</strong> and <strong class="text-teal-400">FastAPI</strong>, and translating complex Figma designs into production-ready products.
+            Dynamic <strong class="text-white">Full-Stack Developer</strong> with <strong class="text-cyan-400">3+ years of expertise</strong> in Flutter and mobile application architecture. Proficient in building scalable backends using <strong class="text-blue-400">Laravel</strong> and <strong class="text-teal-400">FastAPI</strong>. Specialized in converting complex Figma designs into pixel-perfect, responsive interfaces. Proven ability to deploy and manage applications on <strong class="text-purple-400">VPS and Cloud environments</strong>, with a live product presence on the Google Play Store.
         </p>
 
         <!-- CTAs & Links -->
@@ -49,7 +49,7 @@
         <!-- Highlight Stats Grid -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto" data-aos="fade-up">
             <div class="glass-card p-6 rounded-2xl text-center">
-                <div class="text-3xl sm:text-4xl font-extrabold text-cyan-400 mb-1">2+ Years</div>
+                <div class="text-3xl sm:text-4xl font-extrabold text-cyan-400 mb-1">3+ Years</div>
                 <div class="text-xs text-gray-400 uppercase tracking-wider">Flutter Experience</div>
             </div>
             <div class="glass-card p-6 rounded-2xl text-center">
@@ -87,7 +87,7 @@
                 <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6">📱</div>
                 <h3 class="text-xl font-bold text-white mb-4 font-heading">Mobile Development</h3>
                 <div class="flex flex-wrap gap-2">
-                    <span class="badge badge-lg bg-cyan-950 text-cyan-300 border-cyan-700/50 p-3">Flutter (2+ Years)</span>
+                    <span class="badge badge-lg bg-cyan-950 text-cyan-300 border-cyan-700/50 p-3">Flutter (3+ Years)</span>
                     <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">Dart</span>
                     <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">State Management</span>
                     <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">App Publishing</span>
@@ -99,17 +99,16 @@
                 <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-2xl mb-6">⚙️</div>
                 <h3 class="text-xl font-bold text-white mb-4 font-heading">Backend & APIs</h3>
                 <div class="flex flex-wrap gap-2">
-                    <span class="badge badge-lg bg-blue-950 text-blue-300 border-blue-700/50 p-3">Laravel Framework</span>
-                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">Python FastAPI</span>
-                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">RESTful APIs</span>
-                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">JWT Auth</span>
+                    <span class="badge badge-lg bg-blue-950 text-blue-300 border-blue-700/50 p-3">Laravel (1.5 years)</span>
+                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">Python FastAPI (3 Months)</span>
+                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">RESTful API Development</span>
                 </div>
             </div>
 
             <!-- UI/UX & Frontend -->
             <div class="glass-card rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
                 <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6">🎨</div>
-                <h3 class="text-xl font-bold text-white mb-4 font-heading">UI/UX Implementation</h3>
+                <h3 class="text-xl font-bold text-white mb-4 font-heading">UI/UX & Frontend</h3>
                 <div class="flex flex-wrap gap-2">
                     <span class="badge badge-lg bg-purple-950 text-purple-300 border-purple-700/50 p-3">Figma-to-Flutter</span>
                     <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">Figma-to-Web</span>
@@ -124,9 +123,9 @@
                 <h3 class="text-xl font-bold text-white mb-4 font-heading">Database & DevOps</h3>
                 <div class="flex flex-wrap gap-2">
                     <span class="badge badge-lg bg-emerald-950 text-emerald-300 border-emerald-700/50 p-3">MySQL</span>
-                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">VPS Deployment</span>
-                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">cPanel Hosting</span>
-                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">Server Configuration</span>
+                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">VPS Management & Deployment</span>
+                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">cPanel</span>
+                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">Hosting Configuration</span>
                 </div>
             </div>
 
@@ -135,11 +134,11 @@
                 <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6">🛠️</div>
                 <h3 class="text-xl font-bold text-white mb-4 font-heading">Tools & Workflow</h3>
                 <div class="flex flex-wrap gap-3">
-                    <span class="badge badge-lg bg-amber-950 text-amber-300 border-amber-700/50 p-3">Git & GitHub</span>
-                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">Postman API Testing</span>
+                    <span class="badge badge-lg bg-amber-950 text-amber-300 border-amber-700/50 p-3">Git</span>
+                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">GitHub</span>
+                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">Postman</span>
                     <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">Android Studio</span>
                     <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">VS Code</span>
-                    <span class="badge badge-lg bg-slate-800 text-gray-300 border-gray-700 p-3">Agile Methodologies</span>
                 </div>
             </div>
         </div>
@@ -170,7 +169,7 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors font-heading">Fulbaria Sheba</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Architected and deployed a community-centric service application using Flutter, now live on the Google Play Store. Features local service discovery, emergency contact management, and low-latency real-time API data fetching.
+                        Architected and deployed a community-centric service application using Flutter, now live on the Google Play Store. Engineered features for local service discovery, emergency contact management, and real-time data fetching via REST APIs. Optimized app performance and UI rendering to deliver a seamless, low-latency user experience on Android devices.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-xs px-2.5 py-1 rounded-md bg-gray-800 text-cyan-300 font-medium">Flutter</span>
@@ -196,13 +195,13 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors font-heading">E-Commerce Ecosystem</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Engineered a full-stack e-commerce platform integrating a Laravel-powered backend with a Flutter mobile client. Built RESTful APIs for product catalog management, JWT authentication, and checkout flows deployed on VPS with MySQL.
+                        Engineered a full-stack e-commerce platform integrating a Laravel-powered backend with a Flutter mobile client. Architected RESTful APIs for product catalog management, user authentication (JWT), and secure checkout flows. Deployed the application to a VPS environment, configuring MySQL databases, cPanel, and server hosting.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-xs px-2.5 py-1 rounded-md bg-gray-800 text-blue-300 font-medium">Laravel</span>
                         <span class="text-xs px-2.5 py-1 rounded-md bg-gray-800 text-cyan-300 font-medium">Flutter</span>
                         <span class="text-xs px-2.5 py-1 rounded-md bg-gray-800 text-gray-300 font-medium">MySQL</span>
-                        <span class="text-xs px-2.5 py-1 rounded-md bg-gray-800 text-gray-300 font-medium">JWT</span>
+                        <span class="text-xs px-2.5 py-1 rounded-md bg-gray-800 text-gray-300 font-medium">REST APIs</span>
                     </div>
                 </div>
                 <div class="p-8 pt-0">
@@ -212,7 +211,7 @@
                 </div>
             </div>
 
-            <!-- Project 3: Figma to Production UI -->
+            <!-- Project 3: UI/UX Implementation — Figma to Production -->
             <div class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
                 <div class="p-8">
                     <div class="flex items-center justify-between mb-4">
@@ -221,14 +220,14 @@
                         </span>
                         <span class="text-xs text-gray-500">UI/UX</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors font-heading">Figma to Production UI</h3>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors font-heading">UI/UX Implementation — Figma to Production</h3>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Translated complex, high-fidelity Figma prototypes into pixel-perfect, production-ready Flutter and web components. Implemented smooth micro-animations, adaptive layouts, and Material Design compliance.
+                        Translated complex, high-fidelity Figma prototypes into pixel-perfect, production-ready Flutter code. Implemented advanced animations, custom widgets, and adaptive layouts adhering to Material Design principles. Achieved design accuracy and responsiveness across multiple screen sizes and device densities.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="text-xs px-2.5 py-1 rounded-md bg-gray-800 text-purple-300 font-medium">Figma</span>
                         <span class="text-xs px-2.5 py-1 rounded-md bg-gray-800 text-cyan-300 font-medium">Flutter</span>
-                        <span class="text-xs px-2.5 py-1 rounded-md bg-gray-800 text-gray-300 font-medium">Animations</span>
+                        <span class="text-xs px-2.5 py-1 rounded-md bg-gray-800 text-gray-300 font-medium">Dart</span>
                     </div>
                 </div>
                 <div class="p-8 pt-0">
@@ -254,10 +253,10 @@
                 <div class="glass-card rounded-2xl p-8 border-l-4 border-l-cyan-500">
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="text-xl font-bold text-white font-heading">Diploma in Engineering</h3>
-                        <span class="badge badge-accent bg-cyan-500/20 text-cyan-300 border-0">Ongoing (5th Sem)</span>
+                        <span class="badge badge-accent bg-cyan-500/20 text-cyan-300 border-0">Ongoing (5th Semester)</span>
                     </div>
                     <p class="text-cyan-400 font-medium text-sm mb-4">Computer Science & Technology</p>
-                    <p class="text-gray-400 text-sm">Habiganj Polytechnic Institute — Habiganj, Sylhet, Bangladesh</p>
+                    <p class="text-gray-400 text-sm">Habiganj Polytechnic Institute · Habiganj, Sylhet</p>
                 </div>
             </div>
 
@@ -310,7 +309,7 @@
                 <div class="grid sm:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Your Name</label>
-                        <input type="text" name="name" required placeholder="MD Sanged Hasan" class="w-full px-4 py-3.5 rounded-xl bg-gray-900/80 border border-gray-800 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors">
+                        <input type="text" name="name" required placeholder="MD:Sanjid" class="w-full px-4 py-3.5 rounded-xl bg-gray-900/80 border border-gray-800 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors">
                     </div>
                     <div>
                         <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Your Email</label>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sanjid (MD Sanged Hasan) - Full-Stack Developer & Flutter Specialist Portfolio. Specialized in Flutter, Laravel, FastAPI, and responsive UI.">
-    <title>@yield('title', 'Sanjid | Full-Stack Developer & Flutter Specialist')</title>
+    <meta name="description" content="Sanjid (MD:Sanjid) - Full-Stack Developer | Flutter & Mobile Specialist Portfolio. Specialized in Flutter, Laravel, FastAPI, and responsive UI.">
+    <title>@yield('title', 'Sanjid | Full-Stack Developer | Flutter & Mobile Specialist')</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +63,7 @@
                     </div>
                     <div>
                         <span class="text-xl font-bold tracking-tight text-white font-heading block">Sanjid</span>
-                        <span class="text-xs text-cyan-400 font-medium block">Full-Stack Developer</span>
+                        <span class="text-xs text-cyan-400 font-medium block">Full-Stack Developer | Flutter & Mobile Specialist</span>
                     </div>
                 </a>
 
@@ -109,7 +109,7 @@
     <footer class="border-t border-gray-800/80 bg-gray-950 py-12 text-sm text-gray-400">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
-                <p>© {{ date('Y') }} Sanjid (MD Sanged Hasan). All rights reserved.</p>
+                <p>© {{ date('Y') }} Sanjid (MD:Sanjid). All rights reserved.</p>
             </div>
             <div class="flex items-center space-x-6">
                 <a href="https://github.com/Sanjid121" target="_blank" class="hover:text-cyan-400 transition-colors">GitHub</a>
@@ -143,9 +143,9 @@
             if (document.querySelector('#typed-text') && typeof Typed !== 'undefined') {
                 new Typed('#typed-text', {
                     strings: [
+                        'Full-Stack Developer',
                         'Flutter & Mobile Specialist',
                         'Laravel & FastAPI Backend Engineer',
-                        'Full-Stack Solution Architect',
                         'Figma-to-Code Specialist'
                     ],
                     typeSpeed: 50,

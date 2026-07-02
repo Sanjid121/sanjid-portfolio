@@ -1,30 +1,45 @@
 ================================================================
-MD SANGED HASAN (SANJID)
-Full-Stack Developer & Flutter Specialist
+MD:Sanjid
+Full-Stack Developer | Flutter & Mobile Specialist
 Habiganj, Sylhet, Bangladesh | Phone: 01615805076
-GitHub: https://github.com/Sanjid121
-Play Store: https://play.google.com/store/search?q=fulbaria%20sheba&c=apps&hl=fil
+GitHub: github.com/Sanjid121
+Play Store: Play Store: Fulbaria Sheba (https://play.google.com/store/search?q=fulbaria%20sheba&c=apps&hl=fil)
 ================================================================
 
 PROFESSIONAL SUMMARY:
-Dynamic Full-Stack Developer with 2+ years of experience in building 
-scalable mobile apps (Flutter) and robust backends (Laravel, FastAPI). 
-Proven track record of delivering live production applications on Google 
-Play Store and architecting end-to-end RESTful services.
+Dynamic Full-Stack Developer with 3+ years of expertise in Flutter and mobile application architecture. Proficient in building scalable backends using Laravel and FastAPI. Specialized in converting complex Figma designs into pixel-perfect, responsive interfaces. Proven ability to deploy and manage applications on VPS and Cloud environments, with a live product presence on the Google Play Store.
 
-TECHNICAL SKILLS:
-- Mobile: Flutter (2+ Years), Dart, GetX, State Management, Play Store Publishing
-- Backend: Laravel Framework, Python FastAPI, REST APIs, JWT Authentication
-- Database & Cloud: MySQL, VPS Management, cPanel, Server Configuration
-- Frontend & UI/UX: Figma-to-Code, Responsive Design, Tailwind CSS, Alpine.js
+CORE TECHNICAL SKILLS:
+- Mobile Development: Flutter (3+ Years), Dart, State Management, App Publishing
+- Backend & APIs: Laravel (1.5 years), Python FastAPI (3 Months), RESTful API Development
+- UI/UX & Frontend: Figma-to-Flutter, Figma-to-Web, Responsive UI, Animation Design
+- Database & DevOps: MySQL, VPS Management & Deployment, cPanel, Hosting Configuration
+- Tools & Workflow: Git, GitHub, Postman, Android Studio, VS Code
 
-FEATURED PROJECTS:
-1. Fulbaria Sheba (Google Play Store)
-   - Architected community service app with low-latency APIs.
-2. Full-Stack E-Commerce Ecosystem
-   - Laravel API backend + Flutter mobile app integration with JWT.
+KEY PROJECTS & EXPERIENCE:
+1. Fulbaria Sheba [Live on Play Store]
+   - Community Service Mobile Application | Flutter · Android · REST APIs
+   - Architected and deployed a community-centric service application using Flutter, now live on the Google Play Store.
+   - Engineered features for local service discovery, emergency contact management, and real-time data fetching via REST APIs.
+   - Optimized app performance and UI rendering to deliver a seamless, low-latency user experience on Android devices.
+
+2. E-Commerce Ecosystem
+   - Full-Stack Solution | Laravel · Flutter · MySQL · REST APIs
+   - Engineered a full-stack e-commerce platform integrating a Laravel-powered backend with a Flutter mobile client.
+   - Architected RESTful APIs for product catalog management, user authentication (JWT), and secure checkout flows.
+   - Deployed the application to a VPS environment, configuring MySQL databases, cPanel, and server hosting.
+
+3. UI/UX Implementation — Figma to Production
+   - Frontend Specialist | Flutter · Dart · Figma
+   - Translated complex, high-fidelity Figma prototypes into pixel-perfect, production-ready Flutter code.
+   - Implemented advanced animations, custom widgets, and adaptive layouts adhering to Material Design principles.
+   - Achieved design accuracy and responsiveness across multiple screen sizes and device densities.
 
 EDUCATION:
-- Diploma in Engineering in Computer Science & Technology
-  Habiganj Polytechnic Institute (5th Semester - Ongoing)
+- Diploma in Engineering — Computer Science & Technology
+  Habiganj Polytechnic Institute · Habiganj, Sylhet
+  Ongoing (5th Semester)
+
+KEYWORDS & COMPETENCIES:
+Flutter · Dart · Laravel · PHP · FastAPI · Python · RESTful APIs · MySQL · Git · GitHub · Figma · Android · VPS · cPanel · Mobile Development · State Management · Responsive Design · App Deployment · Agile
 ================================================================
